@@ -37,9 +37,9 @@ while cap.isOpened():
     cv.imshow('mask', mask)
     cv.imshow('res', res)
 
-    out0.write(res)
-    out1.write(frame)
-    out2.write(mask)
+    out0.write(frame)
+    out1.write(mask)
+    out2.write(res)
 
     if cv.waitKey(1) == ord('q'):
         break
