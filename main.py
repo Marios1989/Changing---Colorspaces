@@ -32,6 +32,7 @@ while cap.isOpened():
 
     # Bitwise-AND mask and original image
     res = cv.bitwise_and(frame, frame, mask=mask)
+    res2 = cv2.bitwise_and(frame2, frame2, mask_green)
 
     cv.imshow('frame', frame)
     cv.imshow('mask', mask)
